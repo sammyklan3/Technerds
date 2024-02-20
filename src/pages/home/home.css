@@ -1,5 +1,7 @@
 .events-home-container {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .events-title {
@@ -10,6 +12,7 @@
 
 .search-container {
     display: flex;
+    gap: 10px;
     align-items: center;
     background-color: rgb(193, 214, 193);
     border-radius: 15px;
@@ -20,6 +23,11 @@
     background-color: transparent;
     border: none;
     outline: none;
+}
+
+.time-selector ul {
+    display: flex;
+    list-style-type: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
