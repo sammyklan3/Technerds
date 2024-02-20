@@ -1,7 +1,7 @@
 .events-home-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .events-title {
@@ -14,12 +14,13 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    background-color: rgb(193, 214, 193);
+    background-color: rgb(235, 237, 243);
     border-radius: 15px;
     padding: 10px;
 }
 
 .search-container input {
+    width: 100%;
     background-color: transparent;
     border: none;
     outline: none;
@@ -28,8 +29,71 @@
 .time-selector ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
 }
 
+.time-selector li {
+    background-color: rgb(240, 237, 237);
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.time-selector li:active {
+    background-color: rgb(190, 188, 188);
+}
+
+.events-main-container {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+
+.events-main-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.events-main-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.events-main-item img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.events-main-item-details p {
+    color: blue;
+}
+
+.events-main-item-details-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-main-item-details-actionsBtn {
+    background-color: blue;
+    border: none;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.events-main-item-details-actionsBtn p {
+    color: white;
+}
 @media screen and (min-width: 768px) and (max-width: 979px) {
     
 }

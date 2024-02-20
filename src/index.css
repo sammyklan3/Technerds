@@ -8,11 +8,11 @@
 }
 
 body {
-  margin: 2em 17%;
+  margin: 2em 10%;
 }
 
 @media screen and (min-width: 200px) and (max-width: 979px) {
     body {
-      margin: 2em 9%;
+      margin: 2em 6%;
     }
 }
