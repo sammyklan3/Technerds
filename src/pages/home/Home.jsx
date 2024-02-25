@@ -2,13 +2,8 @@ import "./home.css";
 import { FiSettings } from "react-icons/fi";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
-import { useTheme } from "../../context/ThemeContext";
-import ToggleButton from "../../components/ToggleButton";
 
 export const Home = () => {
-
-    const { theme } = useTheme();
-    // State variables to hold the values of input fields
     const [textInput, setTextInput] = useState('');
 
     // Event handlers to update state when input values change
@@ -17,12 +12,11 @@ export const Home = () => {
     };
     return (
         // Root div
-        <div className="events-home-container" style={{ background: theme.body, color: theme.text }}>
+        <div className="events-home-container">
             {/* Events title */}
             <div className="events-title">
                 <h2>Events</h2>
                 <p><FiSettings /></p>
-                <ToggleButton />
             </div>
             {/* Search container */}
             <div className="search-container">
