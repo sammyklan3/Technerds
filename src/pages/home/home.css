@@ -1,7 +1,9 @@
 .events-home-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    height: 100vh;
+    padding: 1em 10%;
 }
 
 .events-title {
@@ -110,7 +112,7 @@
     .events-home-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
     
     .events-title {

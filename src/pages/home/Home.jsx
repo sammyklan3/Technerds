@@ -2,9 +2,12 @@ import "./home.css";
 import { FiSettings } from "react-icons/fi";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
+import { useTheme } from "../../context/ThemeContext";
+import ToggleButton from "../../components/ToggleButton";
 
 export const Home = () => {
 
+    const { theme } = useTheme();
     // State variables to hold the values of input fields
     const [textInput, setTextInput] = useState('');
 
@@ -14,17 +17,19 @@ export const Home = () => {
     };
     return (
         // Root div
-        <div className="events-home-container">
+        <div className="events-home-container" style={{ background: theme.body, color: theme.text }}>
             {/* Events title */}
             <div className="events-title">
                 <h2>Events</h2>
                 <p><FiSettings /></p>
+                <ToggleButton />
             </div>
             {/* Search container */}
             <div className="search-container">
                 <FiSearch />
                 <input type="search" placeholder="Search events" value={textInput}
-                    onChange={handleTextInputChange} />
+                    onChange={handleTextInputChange} 
+                    name="search"/>
             </div>
 
             {/* Time selector filter */}
